@@ -9,10 +9,14 @@
     <link href="https://rawcss.com/rawww.css" rel="stylesheet" />
     <script src="https://unpkg.com/marked@0.6.1/lib/marked.js"></script>
     <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script>
-    <link href="https://unpkg.com/prismjs@1.15.0/themes/prism-okaidia.css" rel="stylesheet" />
-    <script src="https://unpkg.com/prismjs@1.15.0/prism.js"></script>
-    <script src="https://unpkg.com/prismjs@1.15.0/components/prism-markdown.js"></script>
+    <link href="https://unpkg.com/prismjs@1.16.0/themes/prism-okaidia.css" rel="stylesheet" />
+    <script src="https://unpkg.com/prismjs@1.16.0/prism.js"></script>
+    <script src="https://unpkg.com/prismjs@1.16.0/components/prism-markdown.js"></script>
+    <script src="https://unpkg.com/prismjs@1.16.0/components/prism-js-extras.js"></script>
     <style>
+      .token.keyword { color: #c678dd; }
+      .token.property-access { color: #e06c75; }
+      .token.method, .token.function { color: #66d9ef; }
       [id] { cursor: pointer; }
       [id]:hover { background: linear-gradient(to right,#03f,#0bf);-webkit-background-clip: text;-webkit-text-fill-color: transparent; }
       main > button { position: fixed;bottom: 40px;right: 40px;z-index: 1;border-radius: 50%;width: 60px;height: 60px;background: var(--primary);color: white;padding: 0;line-height: 0;font-size: 24px;border: none;box-shadow: var(--box-shadow); }

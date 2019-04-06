@@ -9,14 +9,23 @@
     <link href="https://rawcss.com/rawww.css" rel="stylesheet" />
     <script src="https://unpkg.com/marked@0.6.1/lib/marked.js"></script>
     <script src="https://unpkg.com/vue@2.6.8/dist/vue.min.js"></script>
-    <link href="https://unpkg.com/prismjs@1.16.0/themes/prism-okaidia.css" rel="stylesheet" />
     <script src="https://unpkg.com/prismjs@1.16.0/prism.js"></script>
     <script src="https://unpkg.com/prismjs@1.16.0/components/prism-markdown.js"></script>
     <script src="https://unpkg.com/prismjs@1.16.0/components/prism-js-extras.js"></script>
     <style>
-      .token.keyword { color: #c678dd; }
-      .token.property-access { color: #e06c75; }
-      .token.method, .token.function { color: #66d9ef; }
+      /* Prism - Raw theme */
+      pre { overflow: auto;margin: .5em 0;padding: 1em; }
+      pre, code[class*="language-"] { color: #ccc;background: #111;border-radius: .3em;font: 400 1em/1.5 Menlo, monospace;white-space: pre;tab-size: 2;hyphens: none; }
+      :not(pre) > code[class*="language-"] { padding: .1em; }
+      .token.comment { color: #555; }
+      .token.class-name { color: #fd0; }
+      .token.keyword { color: #f6e; }
+      .token.property-access { color: #f34; }
+      .token.boolean, .token.number { color: #fa3; }
+      .token.string, .token.regex { color: #7d0; }
+      .token.function, .token.method { color: #39f; }
+      .token.operator { color: #3df; }
+
       [id] { cursor: pointer; }
       [id]:hover { background: linear-gradient(to right,#03f,#0bf);-webkit-background-clip: text;-webkit-text-fill-color: transparent; }
     </style>
